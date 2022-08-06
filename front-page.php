@@ -1,7 +1,7 @@
 <?php get_header();
 
 echo '<div class="position-relative z-1">';
-echo 'hello again!';
+echo 'hello again! after doing automatic deploy';
 echo '</div>';
 
 // start of intro
