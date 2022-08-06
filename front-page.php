@@ -1,7 +1,7 @@
 <?php get_header();
 
 echo '<div class="position-relative z-1">';
-echo 'hello again! after doing automatic deploy';
+echo 'hello again! after doing automatic deploy added SSH url to webhook';
 echo '</div>';
 
 // start of intro
