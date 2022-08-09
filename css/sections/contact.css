@@ -18,12 +18,39 @@ input.gform_button.button:hover {
   border-color: var(--accent-secondary);
 }
 
-/* .gform_footer.top_label {
-  margin-bottom: -90px !important;
-} */
-
 input,
 textarea {
   box-shadow: inset 1px 1px 8px #eaeaea !important;
   border: none;
+}
+
+/*  */
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .5);
+  padding: 5px 15px;
+  outline-color: var(--accent-primary);
+}
+
+label {
+  font-weight: 700;
+  font-size: 90%;
+  margin-top: 15px;
+}
+
+button[type=submit] {
+  background: var(--accent-primary);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  transition: all .25s ease-in-out;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background: var(--accent-secondary);
 }
