@@ -59,6 +59,8 @@ wp_nav_menu(array(
 
 echo '</div>';
 
+
+// start of mobile menu
 echo '<div id="navMenuOverlay" class="position-fixed z-2"></div>';
 echo '<div class="col-lg-3 col-md-8 col-11 nav-items bg-white" id="navItems">';
 
@@ -112,6 +114,7 @@ endforeach;
 wp_reset_postdata();
 endif; 
 echo '</div>';
+// end of mobile navigation
 
 
 echo '</div>';
@@ -119,6 +122,8 @@ echo '</div>';
 echo '</div>';
 
 echo '</header>';
+
+
 
 
 if(!is_page() && !is_front_page()){
