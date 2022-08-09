@@ -49,7 +49,7 @@ echo '<a href="' . $link_url . '" target="' . $link_target . '" class="position-
 echo wp_get_attachment_image($bgImgLight,'full','',['class'=>'position-absolute w-100 h-100 bg-img-light','style'=>'top:0;left:0;object-fit:cover;']);
 echo '<div class="bg-accent w-100 h-100 position-absolute" style="top:0;left:0;mix-blend-mode:multiply;opacity:0.7;"></div>';
 
-echo '<div class="position-relative w-100" style="max-width:50vw;">';
+echo '<div class="position-relative w-100 col-content" style="max-width:50vw;">';
 echo wp_get_attachment_image($divider,'full','',['class'=>'w-75 h-100 img-divider','style'=>'mix-blend-mode:color-dodge;']);
 echo '<div class="text-center pt-5 col-img-content">';
 echo '<h3 class="text-accent-tertiary h5 col-pretitle" style="letter-spacing:0.3em;">'; 
@@ -99,7 +99,7 @@ echo '<a href="' . $link_url . '" target="' . $link_target . '" class="position-
 echo wp_get_attachment_image($bgImgLight['id'],'full','',['class'=>'position-absolute w-100 h-100 bg-img-light','style'=>'top:0;left:0;object-fit:cover;']);
 echo '<div class="bg-accent w-100 h-100 position-absolute" style="top:0;left:0;mix-blend-mode:multiply;opacity:0.4;"></div>';
 
-echo '<div class="position-relative w-100" style="max-width:50vw;">';
+echo '<div class="position-relative w-100 col-content" style="max-width:50vw;">';
 echo wp_get_attachment_image($divider['id'],'full','',['class'=>'w-75 h-100 img-divider','style'=>'mix-blend-mode:color-dodge;']);
 echo '<div class="text-center pt-5 col-img-content">';
 echo '<h3 class="text-accent-tertiary h5 col-pretitle" style="letter-spacing:0.3em;">'; 
@@ -111,7 +111,7 @@ echo '<h2 class="text-white col-title" style="letter-spacing:0.2em;">';
 echo '<a href="' . $link_url . '" target="' . $link_target . '" class="gotham">';
 echo $title;
 echo '</a>';
-
+echo '</h2>';
 echo '<a class="bg-accent-outline btn btn-lg d-lg-none d-inline-block text-white mt-4" href="' . esc_url( $link_url ) . '" target="' . esc_attr( $link_target ) . '">Go to ' . esc_html( $link_title ) . '</a>';
 
 echo '</div>';
