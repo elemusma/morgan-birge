@@ -59,7 +59,7 @@ $body .= '<td>';
 $body .= '<table style="padding-top:20px;padding-bottom: 20px;margin:auto;">';
 $body .= '<tbody>';
 $body .= '<tr>';
-$body .= '<td style="text-align: center;"><img src="https://insideoutcreative.io/wp-content/uploads/2022/06/created-by-inside-out-creative-black.png" alt="Logo" width="200px" height="auto"/></td>';
+$body .= '<td style="text-align: center;"><img src="' . home_url() . '/wp-content/uploads/2022/07/Morgan-Birge-Logo-Black.png" alt="Logo" width="200px" height="auto"/></td>';
 $body .= '</tr>';
 $body .= '</tbody>';
 $body .= '</table>';
