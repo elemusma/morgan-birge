@@ -28,13 +28,15 @@ if(!is_front_page()){
 <div class="row align-items-center justify-content-md-center justify-content-end">
 
 <div class="col-lg-4 col-3">
-<a id="navToggle" class="nav-toggle">
-<div>
-<div class="line-1 bg-accent"></div>
-<div class="line-2 bg-accent"></div>
-<div class="line-3 bg-accent"></div>
+<div class="d-none">    
+    <a id="navToggle" class="nav-toggle">
+        <div>
+            <div class="line-1 bg-accent"></div>
+            <div class="line-2 bg-accent"></div>
+            <div class="line-3 bg-accent"></div>
+        </div>
+    </a>
 </div>
-</a>
 </div>
 
 <div class="col-lg-4 col-3 text-center">

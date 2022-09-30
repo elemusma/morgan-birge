@@ -10,7 +10,7 @@
 echo '<section class="bg-attachment" style="background:url(' . get_the_post_thumbnail_url() . ');background-size:cover;background-attachment:fixed;padding-top:300px;padding-bottom:100px;">';
 
 
-
+echo '<div class="row">';
 echo '<div class="col-lg-5 col-md-9 col-11 ml-auto p-0">';
 echo '<div class="bg-accent pt-3 pb-3">';
 echo '<h1 class="text-white text-md-center mb-0 thin pl-md-0 pl-3">' . get_the_title() . '</h1>';
@@ -25,6 +25,10 @@ echo get_sub_field('subtitle');
 echo '</div>';
 echo '</div>';
 endwhile; endif;
+
+echo '</div>';
+
+echo '<div class="col-1"></div>';
 
 echo '</div>';
 
@@ -131,7 +135,7 @@ foreach( $relationship as $post ):
 // Setup this post for WP functions (variable must be named $post).
 setup_postdata($post);
 $counter++;
-echo '<div class="col-md-6 text-white mb-4">';
+echo '<div class="col-md-4 text-white mb-4">';
 echo '<div class="position-relative pt-5 pr-4 pl-4 h-100 d-flex align-items-end col-services" style="background:rgba(0,0,0,.45);">';
 
 echo '<a href="' . get_the_permalink() . '" class="position-absolute w-100 h-100 bg-accent-quaternary d-flex align-items-center justify-content-center z-2 col-services-link" style="top:0;left:0;border:4px solid var(--accent-tertiary);opacity:0;pointer-events:none;text-decoration:none;">';
