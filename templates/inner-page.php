@@ -56,10 +56,19 @@ if(have_rows('content_group')):
     $content = get_sub_field('content');
 
     if($bgImg){
-        echo '<section class="position-relative bg-attachment mt-5 mb-5 section-content ' . $classes . '" style="background:url(' . wp_get_attachment_image_url($bgImg['id'],'full') . ');background-size:contain;background-repeat:no-repeat;background-attachment:fixed;padding:250px 0;' . $style . '">';
+        if($img){
+            echo '<section class="position-relative bg-attachment mt-5 mb-5 section-content ' . $classes . '" style="background:url(' . wp_get_attachment_image_url($bgImg['id'],'full') . ');background-size:contain;background-repeat:no-repeat;background-attachment:fixed;padding:100px 0;' . $style . '">';
+        } else {
+            echo '<section class="position-relative bg-attachment mt-5 mb-5 section-content ' . $classes . '" style="background:url(' . wp_get_attachment_image_url($bgImg['id'],'full') . ');background-size:contain;background-repeat:no-repeat;background-attachment:fixed;padding:250px 0;' . $style . '">';
+            // echo '</section>';
+        }
     } else {
-        echo '<section class="position-relative bg-attachment mt-5 mb-5 section-content ' . $classes . '" style="padding:250px 0;' . $style . '">';
+        if($img){
+            echo '<section class="position-relative bg-attachment mt-5 mb-5 section-content ' . $classes . '" style="padding:100px 0;' . $style . '">';
         // echo '</section>';
+        } else {
+            echo '<section class="position-relative bg-attachment mt-5 mb-5 section-content ' . $classes . '" style="padding:250px 0;' . $style . '">';
+        }
     }
 
     echo '<div class="container-fluid">';
