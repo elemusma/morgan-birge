@@ -28,7 +28,7 @@ if(!is_front_page()){
 <div class="row align-items-center justify-content-md-center justify-content-end">
 
 <div class="col-lg-4 col-3">
-<div class="d-none">    
+<!-- <div class="d-none">     -->
     <a id="navToggle" class="nav-toggle">
         <div>
             <div class="line-1 bg-accent"></div>
@@ -36,7 +36,7 @@ if(!is_front_page()){
             <div class="line-3 bg-accent"></div>
         </div>
     </a>
-</div>
+<!-- </div> -->
 </div>
 
 <div class="col-lg-4 col-3 text-center">
@@ -89,7 +89,7 @@ wp_nav_menu(array(
 echo '</div>';
 
 
-echo '<div class="col-lg-3 col-md-8 col-11 nav-items bg-white pr-0" id="navItemsTwo">';
+echo '<div class="col-lg-3 col-md-8 col-11 nav-items bg-white pr-0 d-none" id="navItemsTwo">';
 $featured_posts = get_field('navigation_menu','options');
 if( $featured_posts ):
 $counterSections = 0;
