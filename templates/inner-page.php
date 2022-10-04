@@ -160,7 +160,7 @@ echo '<a href="#" class="position-absolute w-100 h-100 bg-accent-quaternary d-fl
 
 echo '<div class="text-center">';
 echo '<h6 class="mb-0 bold" style="">' . get_the_title() . '</h6>';
-echo '<div class="pl-4 pr-4">';
+echo '<div class="pl-4 pr-4 small">';
 echo get_field('page_subtitle');
 echo '</div>';
 echo '</div>';
