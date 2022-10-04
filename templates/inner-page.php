@@ -155,7 +155,7 @@ $counter++;
 // }
 echo '<div class="position-relative pr-4 pl-4 h-100 d-flex align-items-end col-services" style="background:rgba(0,0,0,.45);padding-top:100px;">';
 
-echo '<a href="#" class="position-absolute w-100 h-100 bg-accent-quaternary d-flex align-items-center justify-content-center z-2 col-services-link" style="top:0;left:0;border:4px solid var(--accent-tertiary);opacity:0;pointer-events:none;text-decoration:none;">';
+echo '<a class="position-absolute w-100 h-100 bg-accent-quaternary d-flex align-items-center justify-content-center z-2 col-services-link" style="top:0;left:0;border:4px solid var(--accent-tertiary);opacity:0;pointer-events:none;text-decoration:none;">';
 // echo '<a href="' . get_the_permalink() . '" class="position-absolute w-100 h-100 bg-accent-quaternary d-flex align-items-center justify-content-center z-2 col-services-link" style="top:0;left:0;border:4px solid var(--accent-tertiary);opacity:0;pointer-events:none;text-decoration:none;">';
 
 echo '<div class="text-left pl-4 pr-4 small">';
