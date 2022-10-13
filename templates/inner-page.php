@@ -10,6 +10,7 @@
 echo '<section class="bg-attachment" style="background:url(' . get_the_post_thumbnail_url() . ');background-size:cover;background-attachment:fixed;padding-top:300px;padding-bottom:100px;">';
 
 
+echo '<div class="container-fluid">';
 echo '<div class="row">';
 echo '<div class="col-lg-5 col-md-9 col-11 ml-auto p-0">';
 echo '<div class="bg-accent pt-3 pb-3">';
@@ -30,6 +31,7 @@ echo '</div>';
 
 echo '<div class="col-1"></div>';
 
+echo '</div>';
 echo '</div>';
 
 
@@ -117,6 +119,33 @@ if(have_rows('content_group')):
 endwhile; 
 endif;
 // end of content
+
+// start of new content
+if(have_rows('content_columns')): 
+    while(have_rows('content_columns')): the_row();
+
+    $mainBgImg = get_sub_field('background_image');
+    $mainClasses = get_sub_field('classes');
+    $mainStyle = get_sub_field('style');
+    // echo get_sub_field('style');
+
+    if(have_rows('content_sections')): 
+        echo '<section class="position-relative bg-attachment section-content '. $mainClasses . '" style="padding:100px 0;background:url(' . $mainBgImg['url'] . ');background-size:cover;background-repeat:no-repeat;background-position:right;' . $mainStyle . '">';
+        echo '<div class="container-fluid">';
+        echo '<div class="row">';
+        while(have_rows('content_sections')): the_row();
+        echo '<div class="col-lg-4 col-md-6 ' . get_sub_field('classes') . '" style="' . get_sub_field('style') . '">';
+            echo get_sub_field('content');
+        echo '</div>';
+        endwhile;
+        echo '</div>';
+        echo '</div>';
+    echo '</section>';
+    endif;
+
+    endwhile; 
+endif;
+// end of new content
 
 // start of services
 if(have_rows('services_content')): while(have_rows('services_content')): the_row();

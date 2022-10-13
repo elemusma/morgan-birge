@@ -22,6 +22,9 @@ echo wp_get_attachment_image($logo['id'],'full',"",['class'=>'w-100 h-auto','sty
 }
 
 echo '</a>';
+		
+// 		echo get_template_part('partials/si');
+		
 echo '</div>';
 echo '</div>';
 echo '</div>';
