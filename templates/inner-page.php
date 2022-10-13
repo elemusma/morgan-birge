@@ -131,7 +131,7 @@ if(have_rows('content_columns')):
 
     if(have_rows('content_sections')): 
         echo '<section class="position-relative bg-attachment section-content '. $mainClasses . '" style="padding:100px 0;background:url(' . $mainBgImg['url'] . ');background-size:cover;background-repeat:no-repeat;background-position:right;' . $mainStyle . '">';
-        echo '<div class="container-fluid">';
+        echo '<div class="container">';
         echo '<div class="row">';
         while(have_rows('content_sections')): the_row();
         echo '<div class="col-lg-4 col-md-6 ' . get_sub_field('classes') . '" style="' . get_sub_field('style') . '">';
